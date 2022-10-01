@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux'
 import { useScoutStore } from '../../../Hooks';
 import { useParams } from 'react-router-dom';
 import React, { useEffect } from 'react'
+import swal from 'sweetalert';
 
 
 export const MostrarScout = () => {
