@@ -8,6 +8,7 @@ import { SelectCreacion } from "../../selectCreacion"
 import { useNavigate } from 'react-router-dom';
 import { Publicacion } from "../../publicacion";
 import { Eventos } from "../../eventos";
+import { useSelector } from 'react-redux';
 export const HomeAdmin= ()=>{
     const navigate = useNavigate();
     function admiScout(e){ 

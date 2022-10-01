@@ -6,6 +6,7 @@ import { Header } from "../../header"
 
 import { Publicacion } from "../../publicacion";
 import { Eventos } from "../../eventos";
+import { useSelector } from 'react-redux';
 export const HomeScout= ()=>{
     const {user} = useSelector(state=>state.auth);
    
