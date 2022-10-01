@@ -7,7 +7,7 @@ export const useRamaStore = () => {
         // console.log({ nombre, edadMax, edadMin})
 
         try {
-            const { data } = await CentinelApi.post('rama/create-Rama',{ nombre, edadMax, edadMin})
+            await CentinelApi.post('rama/create-Rama',{ nombre, edadMax, edadMin})
             // console.log(data)
             
                 swal({

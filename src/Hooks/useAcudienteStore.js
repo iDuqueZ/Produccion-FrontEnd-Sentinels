@@ -10,7 +10,7 @@ export const useAcudienteStore = () => {
     
       
         try {
-            const { data } = await CentinelApi.post('acudientes/create-acudiente',{ nombre, apellido, email, fecha_nacimiento, celular, idScout})
+            await CentinelApi.post('acudientes/create-acudiente',{ nombre, apellido, email, fecha_nacimiento, celular, idScout})
            
          
                 swal({

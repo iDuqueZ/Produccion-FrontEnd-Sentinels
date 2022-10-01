@@ -12,7 +12,7 @@ export const useScoutStore = () => {
         
         
         try {
-            const { data } = await CentinelApi.post('scouts/create-scout',{ nombre, apellido, email, fecha_nacimiento, celular, idRama, link_ficha_medica})
+            await CentinelApi.post('scouts/create-scout',{ nombre, apellido, email, fecha_nacimiento, celular, idRama, link_ficha_medica})
             // console.log(data)
             
             swal({

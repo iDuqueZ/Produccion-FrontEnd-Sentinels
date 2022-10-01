@@ -22,10 +22,10 @@ export const MostrarScout = () => {
 
     const navigate = useNavigate();
 
-    function actualizar(e) {
-        e.preventDefault();
-        navigate(`/act-scout/${scoutActual._id}`)
-    }
+    // function actualizar(e) {
+    //     e.preventDefault();
+    //     navigate(`/act-scout/${scoutActual._id}`)
+    // }
     useEffect(() => {
         startListScouts()
         // eslint-disable-next-line react-hooks/exhaustive-deps

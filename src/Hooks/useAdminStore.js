@@ -7,7 +7,7 @@ export const useAdminStore = () => {
         // console.log({ nombre, apellido, email, ramasAsignadas})
       
         try {
-            const { data } = await CentinelApi.post('admin/create-admin',{ nombre, apellido, email, ramasAsignadas})
+             await CentinelApi.post('admin/create-admin',{ nombre, apellido, email, ramasAsignadas})
             // console.log(data)
             
                 swal({
