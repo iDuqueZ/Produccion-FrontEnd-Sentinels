@@ -59,9 +59,9 @@ export const MostrarScout = () => {
                     <h3>Rama actual</h3>
                     <h5>Cachorros</h5>
 
-                    <h3>Ficha Medica</h3>
+                    <h3>Ficha Médica</h3>
                     <h5>Descargar</h5>
-                    <Button type="submit" variant="contained" color="primary" onClick={actualizar}>Actualizar datos</Button>
+                    <Button type="submit" variant="contained" color="primary" >Actualizar datos</Button>
 
 
                 </div>
