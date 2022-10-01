@@ -1,0 +1,95 @@
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    width: 90%;
+    color: #C1121F;
+    border-radius: 10px;
+    margin: 5%;
+    margin-top: 0%;
+    border: 1px solid #C1121F;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    width: 90%;
+    background: #C1121F;
+    border-radius: 10px;
+    margin: 5%;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-1hw9j7s {
+    background-color: #c1121f;
+    border-radius: 10px;
+    margin: 4% auto 2%;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.css-79xub {
+    width: 92%;
+    color: #C1121F;
+    border-radius: 10px;
+    margin: 4% auto;
+    margin-top: 0px;
+    margin-left: 4%;
+    margin-right: 4%;
+    border: 1px solid #C1121F;
+}
+button.subir-imagen {
+    background: #eee;
+    border: 2px dashed #292929;
+    border-radius: 10px;
+    width: 94%;
+    display: flex;
+    box-shadow: 3px 3px 20px -5px rgba(27,27,27,.25);
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 3%;
+    justify-content: center;
+}
+.subir-imagen h2{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Complementos/Negro/Negro1 */
+
+    color: #292929;
+
+}
+
+.hori-edad{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    margin: auto;
+}
+
+#maxedad{
+    width: 45%;
+    margin-right: 6%;
+}
+#minedad{
+    width: 45%;
+}
+.rama-in{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+.la-rama {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.la-rama h3 {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    margin-left: 1%;
+    font-size: 1em;
+}
