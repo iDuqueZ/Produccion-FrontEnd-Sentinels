@@ -3,7 +3,6 @@ import Button from '@mui/material/Button'
 import "../../../styles/boton.css"
 import "../../../styles/styles.css"
 import "../../../styles/login.css"
-import { useNavigate } from 'react-router-dom';
 import { Header } from "../../header"
 import { useSelector } from 'react-redux'
 import { useScoutStore } from '../../../Hooks';
