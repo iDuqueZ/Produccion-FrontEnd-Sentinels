@@ -20,7 +20,7 @@ export const MostrarScout = () => {
     const { startListScouts } = useScoutStore();
 
 
-    const navigate = useNavigate();
+   // const navigate = useNavigate();
 
     // function actualizar(e) {
     //     e.preventDefault();
