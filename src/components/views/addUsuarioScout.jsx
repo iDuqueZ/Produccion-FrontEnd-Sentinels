@@ -60,13 +60,16 @@ export const AddUsuarioFicha = () => {
 
         });
 
+      }else{
+        startCrearScout({ nombre, apellido, email, fecha_nacimiento, celular, idRama })
+        
       }
     }
 
 
     //console.log({nombre, apellido, correo, fechaNacimiento, celular})
 
-    startCrearScout({ nombre, apellido, email, fecha_nacimiento, celular, idRama })
+    
   }
 
 
@@ -94,7 +97,7 @@ export const AddUsuarioFicha = () => {
             <Select id='rama' placeholder="Selecciona una opción" />
             <h3>Fecha de nacimiento*</h3>
             <Input name='fecha_nacimiento' value={fecha_nacimiento} onChange={onInputChange} placeholder="Fecha de nacimiento" type="date" />
-            <h3>Numero celular*</h3>
+            <h3>Número celular*</h3>
             <Input name='celular' value={celular} onChange={onInputChange} placeholder="Numero de celular" type="number" />
             {/* <h3>Ficha medica*</h3> */}
             {/* <input

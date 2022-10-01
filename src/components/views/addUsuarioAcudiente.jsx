@@ -47,12 +47,26 @@ export const AddUsuarioAcudiente = () => {
 
       return;
 
+    }else{
+      if (celular <= 0) {
+        swal({
+          title: "Ingrese un numero de celular valido",
+          icon: "warning"
+
+        });
+
+      }else{
+        startCrearAcudiente({ nombre, apellido, email, fecha_nacimiento, celular, idScout })
+
+      }
+
+      
     }
 
 
     //console.log({nombre, apellido, correo, fechaNacimiento, celular})
 
-    startCrearAcudiente({ nombre, apellido, email, fecha_nacimiento, celular, idScout })
+    
   }
 
 
@@ -78,7 +92,7 @@ export const AddUsuarioAcudiente = () => {
             <Input name='email' value={email} onChange={onInputChange} placeholder="Correo" type="email" />
             <h3>Fecha de nacimiento*</h3>
             <Input name='fecha_nacimiento' value={fecha_nacimiento} onChange={onInputChange} placeholder="Fecha de nacimiento" type="date" />
-            <h3>Numero celular*</h3>
+            <h3>Número celular*</h3>
             <Input name='celular' value={celular} onChange={onInputChange} placeholder="Numero de celular" type="number" />
             <h3>Asignar rama*</h3>
             <SelectScout id='scout' placeholder="Selecciona una opción" />
