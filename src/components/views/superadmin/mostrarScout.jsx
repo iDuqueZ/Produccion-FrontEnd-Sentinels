@@ -30,6 +30,13 @@ export const MostrarScout = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    function actualizar(e) {
+        e.preventDefault();
+        swal({
+            title: "Actualmente esta funcion se encuentra en desarrollo",
+            icon: "warning",
+          });
+    }
 
 
     return (
@@ -60,7 +67,7 @@ export const MostrarScout = () => {
 
                     <h3>Ficha Médica</h3>
                     <h5>Descargar</h5>
-                    <Button type="submit" variant="contained" color="primary" >Actualizar datos</Button>
+                    <Button type="submit" variant="contained" color="primary" onClick={actualizar}>Actualizar datos</Button>
 
 
                 </div>
