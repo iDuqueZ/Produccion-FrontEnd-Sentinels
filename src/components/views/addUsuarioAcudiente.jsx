@@ -47,12 +47,26 @@ export const AddUsuarioAcudiente = () => {
 
       return;
 
+    }else{
+      if (celular <= 0) {
+        swal({
+          title: "Ingrese un numero de celular valido",
+          icon: "warning"
+
+        });
+
+      }else{
+        startCrearAcudiente({ nombre, apellido, email, fecha_nacimiento, celular, idScout })
+
+      }
+
+      
     }
 
 
     //console.log({nombre, apellido, correo, fechaNacimiento, celular})
 
-    startCrearAcudiente({ nombre, apellido, email, fecha_nacimiento, celular, idScout })
+    
   }
 
 

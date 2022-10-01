@@ -60,13 +60,16 @@ export const AddUsuarioFicha = () => {
 
         });
 
+      }else{
+        startCrearScout({ nombre, apellido, email, fecha_nacimiento, celular, idRama })
+        
       }
     }
 
 
     //console.log({nombre, apellido, correo, fechaNacimiento, celular})
 
-    startCrearScout({ nombre, apellido, email, fecha_nacimiento, celular, idRama })
+    
   }
 
 
