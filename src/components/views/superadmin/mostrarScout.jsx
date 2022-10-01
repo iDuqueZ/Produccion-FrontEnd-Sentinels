@@ -5,7 +5,7 @@ import "../../../styles/styles.css"
 import "../../../styles/login.css"
 import { Header } from "../../header"
 import { useSelector } from 'react-redux'
-import { useScoutStore } from '../../../Hooks';
+import { useRamasStore, useScoutStore } from '../../../Hooks';
 import { useParams } from 'react-router-dom';
 import React, { useEffect } from 'react'
 import swal from 'sweetalert';
@@ -14,10 +14,13 @@ import swal from 'sweetalert';
 export const MostrarScout = () => {
     const params = useParams();
 
+    const { startListScouts } = useScoutStore();
+    const {startListarRamaID}= useRamasStore();
 
     const { scouts } = useSelector(state => state.scout);
     const scoutActual = scouts.find(scout => scout._id === (params._id));
-    const { startListScouts } = useScoutStore();
+    const { ramaScout } = useSelector(state => state.rama);
+    
 
 
    // const navigate = useNavigate();
@@ -28,6 +31,8 @@ export const MostrarScout = () => {
     // }
     useEffect(() => {
         startListScouts()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        startListarRamaID(params._id)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
@@ -64,10 +69,9 @@ export const MostrarScout = () => {
                     <h5>{scoutActual?.celular}</h5>
 
                     <h3>Rama actual</h3>
-                    <h5>Cachorros</h5>
+                    <h5>{ramaScout}</h5>
 
-                    <h3>Ficha Médica</h3>
-                    <h5>Descargar</h5>
+                    <Button type="submit" variant="contained" color="primary" onClick={actualizar}>Descargar Ficha Medica</Button>
                     <Button type="submit" variant="contained" color="primary" onClick={actualizar}>Actualizar datos</Button>
 
 

@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { Header } from "../../header"
 import { useAuthStore} from "../../../Hooks/useAuthStore"
 import { useSelector } from 'react-redux'
-import { useScoutStore } from '../../../Hooks';
+import { useScoutStore, useRamasStore } from '../../../Hooks';
 import React, { useEffect } from 'react'
 
 export const PerfilScout= ()=>{
@@ -18,9 +18,11 @@ export const PerfilScout= ()=>{
     const {user} = useSelector(state=>state.auth);
     const { scouts } = useSelector(state => state.scout);
     const scoutActual = scouts.find(scout => scout._id === user.uid);
+    const { ramaScout } = useSelector(state => state.rama);
     console.log(scoutActual)
     
     const { startListScouts } = useScoutStore();
+    const {startListarRamaID}= useRamasStore();
     
 
   
@@ -32,6 +34,8 @@ export const PerfilScout= ()=>{
     }
     useEffect(() => {
         startListScouts()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        startListarRamaID(user.uid)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
    
@@ -61,7 +65,7 @@ export const PerfilScout= ()=>{
         <h5>{scoutActual?.celular}</h5>
 
         <h3>Rama actual</h3>
-        <h5>Cachorros</h5>
+        <h5>{ramaScout}</h5>
         
         <Button type="submit" variant="contained" color="primary" onClick={actualizar}>Actualizar datos</Button>
         <Button variant="outlined" color="primary" onClick={startLogout}>Cerrar sesión</Button>
