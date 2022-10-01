@@ -43,7 +43,7 @@ export const PerfilScout= ()=>{
         <Header/>
         <div className="conte-imp">
         <h1>Hola, {scoutActual?.nombre}</h1>
-        <h2>Aqui estan tus datos personales</h2>
+        <h2>Aquí están tus datos personales</h2>
  
         <h3>Nombre</h3>
         <h5>{scoutActual?.nombre}</h5>
@@ -57,7 +57,7 @@ export const PerfilScout= ()=>{
         <h3>Fecha de nacimiento</h3>
         <h5>{scoutActual?.fecha_nacimiento}</h5>
 
-        <h3>Numero de celular</h3>
+        <h3>Número de celular</h3>
         <h5>{scoutActual?.celular}</h5>
 
         <h3>Rama actual</h3>

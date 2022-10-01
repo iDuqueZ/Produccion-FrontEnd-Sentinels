@@ -12,7 +12,7 @@ export const useAuthStore = () => {
         dispatch( onChecking() );
 
         try {
-            console.log(tipo)
+            // console.log(tipo)
             if(tipo=== 0 ){
                 
             const { data } = await CentinelApi.post('superAdmin/log-in-superAdmin',{ email, password });
